@@ -6,6 +6,3 @@ RUN dnf -y update && \
     dnf -y install awscli && \
     dnf clean all && \
     rm -rf /var/cache/dnf
-
-# Set the entrypoint to use buildah by default
-ENTRYPOINT ["buildah"]
